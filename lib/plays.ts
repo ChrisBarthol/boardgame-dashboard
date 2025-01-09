@@ -27,11 +27,11 @@ export const plays = pgTable('plays', {
     location: text('location').notNull()
 });
 
-export type players = PgTable('players', {
+export const players = pgTable('players', {
     id: serial('id').primaryKey(),
     userid: integer('userid').notNull(),
     playid: integer('playid').notNull(),
-)
+});
 
 
 export const user = pgTable('user', {
