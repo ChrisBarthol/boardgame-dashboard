@@ -52,3 +52,6 @@ export const game = pgTable('game', {
     image: text('image').notNull(),
     bggid: integer('bggid').notNull()
 });
+
+export type SelectPlay = typeof plays.$inferSelect;
+export const insertPlaySchema = createInsertSchema(plays);
