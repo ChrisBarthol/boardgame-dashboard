@@ -1,5 +1,5 @@
 import { db } from "./db";
-import { products, SelectProduct } from "./schema";
+import { products, SelectProduct } from "./products";
 import { count, eq, ilike } from 'drizzle-orm';
 
 export async function getProducts(

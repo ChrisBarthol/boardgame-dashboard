@@ -1,4 +1,4 @@
-import { SelectPlays } from '@/lib/schema'
+import { SelectPlays } from '@/lib/products'
 
 export function Play({ play }: { play: SelectPlays }) {
   return (
